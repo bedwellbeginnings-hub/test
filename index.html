@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wanderlust Life Adventures LLC | Pacific Northwest Art, Gear & RV Adventures — Oak Harbor, WA</title>
-<meta name="description" content="Discover authentic Pacific Northwest art prints, apparel, and home goods — plus rent our Airstream Basecamp for your next PNW adventure. Veteran-owned, Oak Harbor, Washington.">
+<meta name="description" content="Discover authentic Pacific Northwest art prints, apparel, and home goods — plus rent our Airstream Basecamp for your next PNW adventure. Veteran-owned, Oak Harbor, WA.">
 <meta name="keywords" content="Pacific Northwest art prints, PNW home decor, Washington state gifts, veteran owned shop, Etsy PNW, Airstream rental Oak Harbor, outdoorsy RV rental, PNW wall art, hiking gifts, Mount Rainier prints, Olympic Peninsula gifts">
 <meta property="og:title" content="Wanderlust Life Adventures LLC | PNW Art & Airstream Adventures">
 <meta property="og:description" content="Shop authentic Pacific Northwest art prints and rent our Airstream Basecamp. Veteran-owned in Oak Harbor, WA.">
@@ -19,7 +19,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Wanderlust Life Adventures LLC",
-  "description": "Veteran-owned Pacific Northwest art prints, apparel, and Airstream RV rental based in Oak Harbor, Washington.",
+  "description": "Veteran-owned Pacific Northwest art prints, apparel, and Airstream RV rental based in Oak Harbor, WA.",
   "address": { "@type": "PostalAddress", "addressLocality": "Oak Harbor", "addressRegion": "WA", "addressCountry": "US" },
   "url": "https://www.etsy.com/shop/WanderlustCouple",
   "sameAs": ["https://www.etsy.com/shop/WanderlustCouple"]
@@ -109,7 +109,7 @@ nav {
     url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1800&q=80') center/cover no-repeat;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
-  text-align: center; padding: 9rem 2rem 5rem;
+  text-align: center; padding: 9rem 2rem 6rem;
   position: relative; overflow: hidden;
 }
 .hero::after {
@@ -161,8 +161,7 @@ nav {
 .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
 
 .hero-quick {
-  position: absolute; bottom: 150px; left: 50%; transform: translateX(-50%);
-  display: flex; gap: 3.5rem;
+  display: flex; gap: 3.5rem; margin-top: 3.5rem;
   animation: fadeUp2 1s 0.5s ease both;
 }
 .hq-item { text-align: center; }
@@ -170,7 +169,7 @@ nav {
 .hq-lbl { font-family: 'Josefin Sans', sans-serif; font-size: 0.65rem; color: var(--mist); letter-spacing: 0.12em; text-transform: uppercase; }
 
 @keyframes fadeDown { from { opacity:0; transform:translateY(-18px); } to { opacity:1; transform:translateY(0); } }
-@keyframes fadeUp2  { from { opacity:0; transform:translateX(-50%) translateY(18px); } to { opacity:1; transform:translateX(-50%) translateY(0); } }
+@keyframes fadeUp2  { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
 @keyframes fadeUp   { from { opacity:0; transform:translateY(22px); } to { opacity:1; transform:translateY(0); } }
 
 /* ── DIVIDER ── */
@@ -250,7 +249,8 @@ section { padding: 5rem 3rem; }
   height: 210px; display: flex; align-items: center; justify-content: center;
   font-size: 4rem; position: relative; overflow: hidden;
 }
-.product-img::after { content:''; position:absolute; inset:0; background:linear-gradient(to bottom,transparent 55%,rgba(0,0,0,0.28)); }
+.product-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.product-img::after { content:''; position:absolute; inset:0; background:linear-gradient(to bottom,transparent 55%,rgba(0,0,0,0.18)); pointer-events:none; }
 .product-badge {
   position: absolute; top: 12px; right: 12px;
   background: var(--forest); color: var(--cream);
@@ -554,7 +554,7 @@ footer { background: var(--charcoal); padding: 3.5rem 3rem 1.5rem; }
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .hero h1 { font-size: 2.6rem; }
-  .hero-quick { flex-direction: column; gap: 1rem; bottom: 170px; }
+  .hero-quick { flex-direction: column; gap: 1rem; }
   .products-grid { grid-template-columns: 1fr; }
   .recs-grid { grid-template-columns: 1fr; }
   .steps-grid { grid-template-columns: 1fr 1fr; }
@@ -592,7 +592,7 @@ footer { background: var(--charcoal); padding: 3.5rem 3rem 1.5rem; }
 <section class="hero" aria-label="Hero">
   <div class="hero-badge">🎖️ Veteran-Owned · Pacific Northwest</div>
   <h1>Rooted in the <em>Wild</em><br>Made For Your Home</h1>
-  <p class="hero-sub">Authentic Pacific Northwest art for your walls, gear for your life — and an Airstream Basecamp waiting to take you there. Made in Oak Harbor, Washington.</p>
+  <p class="hero-sub">Authentic Pacific Northwest art for your walls, gear for your life — and an Airstream Basecamp waiting to take you there. Made in Oak Harbor, WA.</p>
   <div class="hero-btns">
     <a href="https://www.etsy.com/shop/WanderlustCouple" target="_blank" rel="noopener" class="btn-primary">Shop the Collection</a>
     <a href="#airstream" class="btn-outline">Rent Our Airstream</a>
@@ -604,38 +604,13 @@ footer { background: var(--charcoal); padding: 3.5rem 3rem 1.5rem; }
   </div>
 </section>
 
-<!-- ── SCROLLING RIBBON ── -->
-<div class="ribbon-wrap" aria-hidden="true">
-  <div class="ribbon-track">
-    <span class="ribbon-item">🌲 Old Growth Forest<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🏔️ Mount Rainier<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🐋 Puget Sound Orca<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🏕️ Olympic Peninsula<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🚐 Airstream Adventures<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🌿 Hoh Rainforest<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🌌 Dark Sky Stargazing<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🦅 San Juan Islands<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🐟 Deception Pass<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🌅 Whidbey Island<span class="ribbon-dot">◆</span></span>
-    <!-- duplicate for seamless loop -->
-    <span class="ribbon-item">🌲 Old Growth Forest<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🏔️ Mount Rainier<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🐋 Puget Sound Orca<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🏕️ Olympic Peninsula<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🚐 Airstream Adventures<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🌿 Hoh Rainforest<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🌌 Dark Sky Stargazing<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🦅 San Juan Islands<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🐟 Deception Pass<span class="ribbon-dot">◆</span></span>
-    <span class="ribbon-item">🌅 Whidbey Island<span class="ribbon-dot">◆</span></span>
-  </div>
-</div>
+
 
 <!-- ── STORY BAND ── -->
 <div class="story-band">
   <div class="story-inner">
     <blockquote>"The Pacific Northwest isn't just where we live — it's what we breathe. Every product we design and make, every trail we point you toward, is born from genuine love for this wild corner of the world."</blockquote>
-    <cite>— Wanderlust Life Adventures LLC · Oak Harbor, Washington</cite>
+    <cite>— Wanderlust Life Adventures LLC · Oak Harbor, WA</cite>
   </div>
 </div>
 
@@ -652,14 +627,14 @@ footer { background: var(--charcoal); padding: 3.5rem 3rem 1.5rem; }
     <div class="products-grid">
 
       <article class="product-card reveal" itemscope itemtype="https://schema.org/Product">
-        <div class="product-img" style="background:linear-gradient(135deg,#1a3320,#2d5a30,#3d7a3f);">
-          🌲
-          <div class="product-badge">Best Seller</div>
+        <div class="product-img" style="background:#e8ede4;">
+          <img src="Orca Woven Blanket.jpg" alt="Orca Ocean Woven Blanket" style="width:100%;height:210px;object-fit:cover;display:block;">
+          <div class="product-badge">Free Shipping!</div>
         </div>
         <div class="product-body">
-          <div class="product-cat">Home · Blanket </div>
+          <div class="product-cat">Home · Blanket</div>
           <div class="product-name" itemprop="name">Orca Ocean Woven Blanket</div>
-          <p class="product-desc" itemprop="description">A 100% cotton woven blanket with a coastal vintage-adventure aesthetic, featuring detailed ocean-inspired imagery, fringed edges, and your choice of bold graphic or photorealistic design for a durable, textured, and versatile statement piece.</p>
+          <p class="product-desc" itemprop="description">A 100% cotton woven blanket with a coastal vintage-adventure aesthetic, featuring detailed ocean-inspired imagery, fringed edges, and a bold graphic design for a durable, textured statement piece.</p>
           <div class="product-footer">
             <div class="product-price">$69.99</div>
             <a href="https://www.etsy.com/listing/4482279292/orca-ocean-woven-blanket" target="_blank" rel="noopener" class="btn-shop">Shop Now</a>
@@ -668,71 +643,78 @@ footer { background: var(--charcoal); padding: 3.5rem 3rem 1.5rem; }
       </article>
 
       <article class="product-card reveal" itemscope itemtype="https://schema.org/Product">
-        <div class="product-img" style="background:linear-gradient(160deg,#1a2d45,#2a4a6e,#e8a030,#c87020);">🏔️</div>
+        <div class="product-img" style="background:#e8ede4;">
+          <img src="Landscape Woven Blanket.jpg" alt="Mountain Landscape Woven Blanket" style="width:100%;height:210px;object-fit:cover;display:block;">
+          <div class="product-badge">Free Shipping!</div>
+        </div>
         <div class="product-body">
-          <div class="product-cat">Apparel · Hoodie</div>
-          <div class="product-name" itemprop="name">Rainier Sunrise Pullover</div>
-          <p class="product-desc" itemprop="description">Heavyweight fleece with the iconic volcanic peak glowing gold. Unisex S–3XL, printed on Bella+Canvas blanks for buttery softness.</p>
+          <div class="product-cat">Home · Blanket</div>
+          <div class="product-name" itemprop="name">Mountain Landscape Woven Blanket</div>
+          <p class="product-desc" itemprop="description">Scenic river and forest throw woven in rich earth tones — a stunning piece inspired by the sweeping mountain landscapes of the Pacific Northwest. Fringed edges, made to last.</p>
           <div class="product-footer">
-            <div class="product-price">$52 <span>– $62</span></div>
-            <a href="https://www.etsy.com/shop/WanderlustCouple" target="_blank" rel="noopener" class="btn-shop">Shop Now</a>
+            <div class="product-price">$69.99</div>
+            <a href="https://www.etsy.com/listing/4485919128/mountain-landscape-woven-blanket-scenic" target="_blank" rel="noopener" class="btn-shop">Shop Now</a>
           </div>
         </div>
       </article>
 
       <article class="product-card reveal" itemscope itemtype="https://schema.org/Product">
-        <div class="product-img" style="background:linear-gradient(135deg,#0d2535,#1a4a70,#2a7aaa);">
-          🐋
+        <div class="product-img" style="background:#e8ede4;">
+          <img src="Flamingo Outdoor Mug.jpg" alt="Flamingo Enamel Camp Cup" style="width:100%;height:210px;object-fit:cover;display:block;">
           <div class="product-badge">Gift Favorite</div>
         </div>
         <div class="product-body">
           <div class="product-cat">Kitchen · Mug</div>
-          <div class="product-name" itemprop="name">Orca Puget Sound Ceramic Mug</div>
-          <p class="product-desc" itemprop="description">15oz ceramic with a Southern Resident orca breaching in Puget Sound. Dishwasher-safe glaze. A cherished gift for anyone who loves the Salish Sea.</p>
+          <div class="product-name" itemprop="name">Flamingo Enamel Camp Cup</div>
+          <p class="product-desc" itemprop="description">Retro outdoor enamel mug with a bold flamingo pattern — perfect for campfire mornings. Durable, lightweight, and a fun statement piece for any adventure lover.</p>
           <div class="product-footer">
-            <div class="product-price">$22 <span>– $26</span></div>
+            <div class="product-price">$21.24 <span>reg. $24.99</span></div>
+            <a href="https://www.etsy.com/listing/4385894236/flamingo-enamel-camp-cup-retro-outdoor" target="_blank" rel="noopener" class="btn-shop">Shop Now</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal" itemscope itemtype="https://schema.org/Product">
+        <div class="product-img" style="background:#e8ede4;">
+          <img src="Orca Phone Case.jpg" alt="Orca Phone Case" style="width:100%;height:210px;object-fit:cover;display:block;">
+        </div>
+        <div class="product-body">
+          <div class="product-cat">Accessories · Phone Case</div>
+          <div class="product-name" itemprop="name">Orca Phone Case</div>
+          <p class="product-desc" itemprop="description">Carry the Salish Sea with you everywhere. Watercolor orca breaching against misty PNW mountains — available for most iPhone and Samsung models.</p>
+          <div class="product-footer">
+            <div class="product-price">View on Etsy</div>
             <a href="https://www.etsy.com/shop/WanderlustCouple" target="_blank" rel="noopener" class="btn-shop">Shop Now</a>
           </div>
         </div>
       </article>
 
       <article class="product-card reveal" itemscope itemtype="https://schema.org/Product">
-        <div class="product-img" style="background:linear-gradient(135deg,#0a0d1a,#1a1f35,#2a3a6a,#a0b0e0);">🌌</div>
+        <div class="product-img" style="background:#e8ede4;">
+          <img src="Camping Fuzzy Blanket.jpg" alt="Camping Fuzzy Blanket" style="width:100%;height:210px;object-fit:cover;display:block;">
+        </div>
         <div class="product-body">
-          <div class="product-cat">Home · Canvas</div>
-          <div class="product-name" itemprop="name">Milky Way Pine Reflection</div>
-          <p class="product-desc" itemprop="description">A star-filled sky mirrored in a still alpine lake, ringed by dark silhouette pines. Gallery-wrapped canvas, arrives ready to hang. 16×20 to 24×36.</p>
+          <div class="product-cat">Home · Blanket</div>
+          <div class="product-name" itemprop="name">Camping Fuzzy Blanket</div>
+          <p class="product-desc" itemprop="description">Cozy retro-illustrated velveteen throw featuring a vintage camper trailer and campfire at dusk. The perfect companion for cool PNW evenings — in the trailer or on the couch.</p>
           <div class="product-footer">
-            <div class="product-price">$58 <span>– $115</span></div>
+            <div class="product-price">View on Etsy</div>
             <a href="https://www.etsy.com/shop/WanderlustCouple" target="_blank" rel="noopener" class="btn-shop">Shop Now</a>
           </div>
         </div>
       </article>
 
       <article class="product-card reveal" itemscope itemtype="https://schema.org/Product">
-        <div class="product-img" style="background:linear-gradient(135deg,#1a2520,#2a4030,#4a3020,#c87830);">🏡</div>
-        <div class="product-body">
-          <div class="product-cat">Home · Throw Pillow</div>
-          <div class="product-name" itemprop="name">Cozy Rain Cabin Pillow</div>
-          <p class="product-desc" itemprop="description">Warm lamplight spilling from a cedar cabin on a rainy PNW evening. Double-sided print, 16×16 or 20×20. The coziest gift for any PNW home.</p>
-          <div class="product-footer">
-            <div class="product-price">$34 <span>– $44</span></div>
-            <a href="https://www.etsy.com/shop/WanderlustCouple" target="_blank" rel="noopener" class="btn-shop">Shop Now</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="product-card reveal" itemscope itemtype="https://schema.org/Product">
-        <div class="product-img" style="background:linear-gradient(135deg,#2a1810,#4a2a18,#6a3a25,#c87830);">
-          🐻
-          <div class="product-badge">Top Gift</div>
+        <div class="product-img" style="background:#e8ede4;">
+          <img src="Tropical Palm Suitcase Protector.jpg" alt="Tropical Palm Suitcase Protector" style="width:100%;height:210px;object-fit:cover;display:block;">
+          <div class="product-badge">Travel Ready</div>
         </div>
         <div class="product-body">
-          <div class="product-cat">Accessories · Tote</div>
-          <div class="product-name" itemprop="name">Black Bear Folk Art Tote</div>
-          <p class="product-desc" itemprop="description">Heavy-duty natural canvas tote with a bold woodcut-style bear illustration. Sturdy enough for the farmer's market, pretty enough for the trail.</p>
+          <div class="product-cat">Travel · Accessories</div>
+          <div class="product-name" itemprop="name">Tropical Palm Suitcase Protector</div>
+          <p class="product-desc" itemprop="description">Bold tropical palm print luggage cover — spot your bag instantly on the carousel and protect it in style. Fits most standard carry-on and checked luggage sizes.</p>
           <div class="product-footer">
-            <div class="product-price">$21 <span>– $25</span></div>
+            <div class="product-price">View on Etsy</div>
             <a href="https://www.etsy.com/shop/WanderlustCouple" target="_blank" rel="noopener" class="btn-shop">Shop Now</a>
           </div>
         </div>
@@ -755,31 +737,38 @@ footer { background: var(--charcoal); padding: 3.5rem 3rem 1.5rem; }
     <div class="recs-grid">
 
       <div class="rec-card reveal">
-        <span class="rec-icon">🏡</span>
-        <h3>New Homeowner Gift</h3>
-        <p>The <strong>Misty Old Growth Forest print</strong> in a natural maple frame is our most-gifted item for housewarming. It works in any room and instantly makes a space feel grounded.</p>
-        <a href="https://www.etsy.com/shop/WanderlustCouple" target="_blank" rel="noopener" class="rec-cta">Shop this pick ↗</a>
+        <span class="rec-icon">🐋</span>
+        <h3>Orca Ocean Woven Blanket</h3>
+        <p>Our most iconic piece — three orcas leaping against misty PNW mountains, woven in rich blues and greens with fringed edges. A statement throw for any home. Free shipping!</p>
+        <a href="https://www.etsy.com/listing/4482279292/orca-ocean-woven-blanket" target="_blank" rel="noopener" class="rec-cta">Shop this pick ↗</a>
       </div>
 
       <div class="rec-card reveal">
-        <span class="rec-icon">🎁</span>
-        <h3>Under-$30 Gift</h3>
-        <p>The <strong>Orca Puget Sound Mug</strong> hits the sweet spot — meaningful, useful, and totally PNW. Pair it with a sticker pack and you've got a gift worth unwrapping.</p>
-        <a href="https://www.etsy.com/shop/WanderlustCouple" target="_blank" rel="noopener" class="rec-cta">Shop this pick ↗</a>
+        <span class="rec-icon">🏔️</span>
+        <h3>Mountain Landscape Woven Blanket</h3>
+        <p>Sweeping river valley and old-growth forest in warm earth tones — this scenic woven throw brings the grandeur of the Cascades into your living room. Free shipping!</p>
+        <a href="https://www.etsy.com/listing/4485919128/mountain-landscape-woven-blanket-scenic" target="_blank" rel="noopener" class="rec-cta">Shop this pick ↗</a>
       </div>
 
       <div class="rec-card reveal">
-        <span class="rec-icon">🌌</span>
-        <h3>Statement Wall Piece</h3>
-        <p>The <strong>Milky Way Pine Reflection canvas</strong> at 24×36 stops people in their tracks. Perfect for a living room or bedroom focal wall — a conversation starter every time.</p>
-        <a href="https://www.etsy.com/shop/WanderlustCouple" target="_blank" rel="noopener" class="rec-cta">Shop this pick ↗</a>
+        <span class="rec-icon">🦩</span>
+        <h3>Flamingo Enamel Camp Cup</h3>
+        <p>Retro outdoor enamel mug with a bold flamingo pattern — perfect for campfire mornings and a great gift under $25. Currently on sale at 15% off!</p>
+        <a href="https://www.etsy.com/listing/4385894236/flamingo-enamel-camp-cup-retro-outdoor" target="_blank" rel="noopener" class="rec-cta">Shop this pick ↗</a>
       </div>
 
       <div class="rec-card reveal">
         <span class="rec-icon">👕</span>
-        <h3>For the Outdoor Lover</h3>
-        <p>The <strong>Rainier Sunrise Hoodie</strong> is the one they'll actually wear on the trail. Soft, warm, and printed with a mountain view that earns compliments every single time.</p>
-        <a href="https://www.etsy.com/shop/WanderlustCouple" target="_blank" rel="noopener" class="rec-cta">Shop this pick ↗</a>
+        <h3>Adventure Travel T-Shirt</h3>
+        <p>Unisex softstyle tee built for explorers — soft, comfortable, and designed for people who'd rather be outside. Perfect gift for the traveler in your life.</p>
+        <a href="https://www.etsy.com/listing/4342467196/adventure-travel-t-shirt-unisex" target="_blank" rel="noopener" class="rec-cta">Shop this pick ↗</a>
+      </div>
+
+      <div class="rec-card reveal">
+        <span class="rec-icon">🧳</span>
+        <h3>Personalized Luggage Tag</h3>
+        <p>Custom wanderlust luggage tag — personalized with your name or initials. A thoughtful travel accessory that makes spotting your bag easy and looks great doing it.</p>
+        <a href="https://www.etsy.com/listing/4342940933/personalized-wanderlust-luggage-tag" target="_blank" rel="noopener" class="rec-cta">Shop this pick ↗</a>
       </div>
 
       <div class="rec-card reveal">
@@ -787,13 +776,6 @@ footer { background: var(--charcoal); padding: 3.5rem 3rem 1.5rem; }
         <h3>For the Real Adventurer</h3>
         <p>Skip the print — <strong>book the Airstream</strong> on Outdoorsy and actually go live in the landscape. Then come back and get the art to remember it forever.</p>
         <a href="https://www.outdoorsy.com/rv-rental/oak-harbor_wa/2023_airstream_basecamp_509506-listing?preview=true" target="_blank" rel="noopener" class="rec-cta">Book the Airstream ↗</a>
-      </div>
-
-      <div class="rec-card reveal">
-        <span class="rec-icon">🎨</span>
-        <h3>Gallery Wall Bundle</h3>
-        <p>Pick any 3 prints in complementary sizes — forest, orca, and nightsky work beautifully together. Message us on Etsy for a bundle discount before you buy.</p>
-        <a href="https://www.etsy.com/shop/WanderlustCouple" target="_blank" rel="noopener" class="rec-cta">Message us on Etsy ↗</a>
       </div>
 
     </div>
@@ -997,39 +979,6 @@ footer { background: var(--charcoal); padding: 3.5rem 3rem 1.5rem; }
   </div>
 </section>
 
-<!-- ── CUSTOMER REVIEWS SCROLLING ── -->
-<section class="reviews-section" id="reviews" aria-label="Customer reviews">
-  <div class="reviews-header reveal">
-    <div class="section-label">Customer Love</div>
-    <h2 class="section-title">What Our Customers Say</h2>
-  </div>
-  <div class="reviews-track-wrap">
-    <div class="reviews-track">
-
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"The forest print arrived and I literally teared up. It looks exactly like the view from our cabin near North Cascades. Beautifully packed and exactly as pictured."</p><div class="review-author">Sarah M. — Bellingham, WA</div><div class="review-product">Misty Old Growth Forest Print · 12×16</div></div>
-
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Bought the Rainier hoodie as a gift for my husband — a Navy vet — and he hasn't taken it off. The print quality is incredible and it's so soft. Ordering more!"</p><div class="review-author">Jessica T. — Oak Harbor, WA</div><div class="review-product">Rainier Sunrise Hoodie · XL</div></div>
-
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Finally a shop that actually LIVES in the PNW. You can feel the authenticity in every design. The orca mug is my favorite thing in my kitchen right now."</p><div class="review-author">Mike D. — Seattle, WA</div><div class="review-product">Orca Puget Sound Mug</div></div>
-
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Ordered the Milky Way canvas for my daughter who just moved to Portland and misses WA. She said it made her apartment feel like home. 10/10 would absolutely recommend."</p><div class="review-author">Carol R. — Anacortes, WA</div><div class="review-product">Milky Way Pine Canvas · 24×36</div></div>
-
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Shipped faster than expected, packaged with such care. The folk art bear tote is PERFECT for my trail hiking kit. Sturdy, beautiful, and totally unique. Love it."</p><div class="review-author">Amanda K. — Everett, WA</div><div class="review-product">Black Bear Folk Art Tote</div></div>
-
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"A veteran-owned shop on Etsy that actually delivers stunning quality? Yes. Yes. Yes. The cabin pillow is the coziest thing we own. Perfect for PNW winter nights."</p><div class="review-author">David L. — Whidbey Island, WA</div><div class="review-product">Cozy Rain Cabin Throw Pillow · 20×20</div></div>
-
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"I've ordered from a bunch of Etsy PNW shops. This one stands out — the colors are deep, the paper is thick, the print is crisp. Nothing mass-produced about it."</p><div class="review-author">Trish W. — Port Townsend, WA</div><div class="review-product">Olympic Coast Sunset Print · 18×24</div></div>
-
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Bought 3 prints to do a gallery wall — the forest, the rainforest glow, and the orca coast. The color palette is so cohesive. Feels like a curated collection."</p><div class="review-author">Ryan B. — Tacoma, WA</div><div class="review-product">Gallery Wall Bundle · 3 prints</div></div>
-
-      <!-- duplicates for seamless loop -->
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"The forest print arrived and I literally teared up. It looks exactly like the view from our cabin near North Cascades. Beautifully packed and exactly as pictured."</p><div class="review-author">Sarah M. — Bellingham, WA</div><div class="review-product">Misty Old Growth Forest Print · 12×16</div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Bought the Rainier hoodie as a gift for my husband — a Navy vet — and he hasn't taken it off. The print quality is incredible and it's so soft. Ordering more!"</p><div class="review-author">Jessica T. — Oak Harbor, WA</div><div class="review-product">Rainier Sunrise Hoodie · XL</div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Finally a shop that actually LIVES in the PNW. You can feel the authenticity in every design. The orca mug is my favorite thing in my kitchen right now."</p><div class="review-author">Mike D. — Seattle, WA</div><div class="review-product">Orca Puget Sound Mug</div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Ordered the Milky Way canvas for my daughter who just moved to Portland and misses WA. She said it made her apartment feel like home. 10/10 would absolutely recommend."</p><div class="review-author">Carol R. — Anacortes, WA</div><div class="review-product">Milky Way Pine Canvas · 24×36</div></div>
-    </div>
-  </div>
-</section>
 
 <!-- ── FAQ ── -->
 <section class="faq-section" id="faq">
@@ -1083,23 +1032,13 @@ footer { background: var(--charcoal); padding: 3.5rem 3rem 1.5rem; }
   </div>
 </section>
 
-<!-- ── NEWSLETTER ── -->
-<div class="newsletter" id="newsletter">
-  <h2>Stay Connected to the Wild</h2>
-  <p>Get new design drops, trip reports from the trail, and exclusive Etsy coupon codes delivered to your inbox.</p>
-  <div class="signup-form">
-    <input type="email" placeholder="your@email.com" aria-label="Email address">
-    <button type="button">Subscribe</button>
-  </div>
-  <div style="margin-top:1rem;font-size:0.78rem;color:rgba(184,212,220,0.6);font-style:italic;">No spam. Just PNW updates worth reading.</div>
-</div>
 
 <!-- ── FOOTER ── -->
 <footer>
   <div class="footer-grid">
     <div>
       <div class="footer-brand-logo">Wanderlust Life Adventures <span>LLC</span></div>
-      <div class="footer-tagline">Oak Harbor, Washington · Veteran-Owned</div>
+      <div class="footer-tagline">Oak Harbor, WA · Veteran-Owned</div>
       <p class="footer-desc">Original Pacific Northwest art, printed fresh on demand — and an Airstream Basecamp ready to take you to the places that inspire every design.</p>
       <div class="veteran-badge">🎖️ Veteran-Owned Small Business</div>
     </div>
@@ -1117,19 +1056,18 @@ footer { background: var(--charcoal); padding: 3.5rem 3rem 1.5rem; }
       <a href="#locations">PNW Places to Visit</a>
       <a href="#howto">How to Order</a>
       <a href="#faq">FAQ</a>
-      <a href="#newsletter">Newsletter</a>
     </div>
     <div class="footer-col">
       <h5>Connect</h5>
       <a href="https://www.etsy.com/shop/WanderlustCouple" target="_blank" rel="noopener">Etsy Shop</a>
       <a href="https://www.instagram.com/wanderlustlifeadventures" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://pin.it/2K8uOCdjH" target="_blank" rel="noopener">Pinterest</a>
+      <a href="https://www.pinterest.com/bedwellbeginnings/rv-living/?invite_code=57f747c49e9d41eebd0243fc0a2094b8&sender=794533696668661213#">Pinterest</a>
       <a href="https://www.youtube.com/@MandVwanderlustlifeadventures" target="_blank" rel="noopener">YouTube Coming Soon!</a>
       <a href="https://www.etsy.com/shop/WanderlustCouple" target="_blank" rel="noopener">Message on Etsy</a>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Wanderlust Life Adventures LLC · Oak Harbor, Washington · All designs original &amp; exclusive.</p>
+    <p>© 2025 Wanderlust Life Adventures LLC · Oak Harbor, WA · All designs original &amp; exclusive.</p>
     <p>Built with love for the PNW 🌲</p>
   </div>
 </footer>
@@ -1165,19 +1103,6 @@ window.addEventListener('scroll', () => {
   lastScrollY = y;
 }, { passive: true });
 
-// ── Newsletter subscribe stub ──
-document.querySelector('.signup-form button').addEventListener('click', function() {
-  const input = this.previousElementSibling;
-  if (input.value && input.value.includes('@')) {
-    this.textContent = '✔ Subscribed!';
-    this.style.background = 'var(--fern)';
-    input.value = '';
-    setTimeout(() => { this.textContent = 'Subscribe'; this.style.background = ''; }, 3000);
-  } else {
-    input.style.outline = '2px solid #c84040';
-    setTimeout(() => input.style.outline = '', 1500);
-  }
-});
 </script>
 
 </body>
